@@ -1,0 +1,27 @@
+<html>
+<body>
+<form action="/process_get" method="get">
+First Name: <input type="text" name="first_name">  <br>
+
+Last Name: <input type="text" name="last_name">
+<input type="submit" value="Submit">
+</form>
+<form action="http://127.0.0.1:1234/process_post" method="POST">
+First Name: <input type="text" name="first_name">  <br>
+
+Last Name: <input type="text" name="last_name">
+<input type="submit" value="Submit">
+</form>
+
+<form action="/file_upload" method="POST" enctype="multipart/form-data">
+    请选择文件: 
+    <input type="file" name="img" id="">
+    <input type="submit" value="上传文件">
+</form>
+<script>
+    document.cookie = 'a=123';
+    document.cookie = 'b=222222';
+</script>
+
+</body>
+</html>
